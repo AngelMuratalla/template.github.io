@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <!--<meta charset="UTF-8"> Extiende la cantidad de caracteres
+    que podemos utilizar dentro de nuestra pagina.
+    Le indica también al navegador como se codificaran los caracteres. -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gatitos Lindos</title>
+  </head>
+  <body>
+    <!-- main sirve para indicar al navegador el contenido principal
+    de nuestra página, y eso ayuda al posicionamiento. -->
+    <main>
+      <h1>App de fotos de gatos</h1>
+      
+      <section>
+        <h2>Fotos de gatos</h2>
+        
+        <p>Ve más <a href="https://freecatphotoapp.com" target="_blank" rel="noopener noreferred">fotos de gatos</a> en nuestra galería</p>
+        
+        <a href="#">
+        <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="Orange cat">
+        </a>
+      </section>
+
+      <section>
+        <h2>Listas de gatos</h2>
+
+        <h3>Cosas que a los gatos aman</h3>
+        <ul>
+          <li>Jugar con bolas de tela</li>
+          <li>Seguir la luz de un laser</li>
+          <li>Comer lasaña</li>  
+        </ul>
+        <!-- figure te permite asociar una imagen a una descripción -->
+        <figure>
+          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="Deliciosa Lasaña ñam ñam">
+          <!-- figcaption añade esa descripción -->
+          <figcaption>Los gatos <em>adoran</em> la lasaña</figcaption>
+        </figure>
+
+        <h3>Cosas que los gatos odian</h3>
+        <ol>
+          <li>Tratamiento antipulgas</li>
+          <li>Truenos</li>
+          <li>Otros gatos :0</li>
+        </ol>
+        <figure>
+          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Mini manada de gatos">
+          <figcaption>¿A los gatos <strong>no les gustan</strong> otros gatos?</figcaption>
+        </figure>
+      </section>
+
+      <section>
+        <h2>Formulario de gatos</h2>
+        <form action="https://freecatphotoapp.com/submit-cat-photo">
+          
+          <p>¿Tu gato prefiere estar en?</p>
+          <!-- Rodeamos un input con un label para vincularlo con su texto, 
+          así al clickear el texto también lo hará sobre el input-->
+          <label><input type="radio" name="preferencia" id="exterior" value="exterior"> Exterior</label> <br>
+          <label><input type="radio"name="preferencia" id="interior" value="interior"> Interior</label> <br>
+          <!-- type="radio" indica que es una casilla de radio -->
+          <!-- name="preferencia" es el nombre del grupo de casillas -->
+          <!-- id="valor" es un identificador único para el elemento -->
+
+          <!-- value="valor" es el valor asociado a esa casilla
+          de no colocar este atributo simplemente se enviará con "on",
+          y ocupamos ese atributo para cambiar ese valor predeterminado.
+        
+          Por convención suele llevar el mismo nombre que el ID.-->
+          <br>
+
+          <!-- fieldset es ocupado para agrupar un conjunto de entradas,
+          colocando un recuadro para encerrarlas -->
+          <fieldset>
+            <!-- legend es el titulo/leyenda/descripción de ese recuadro -->
+            <legend>¿Dónde prefiere estar tu gato?</legend>
+          
+            <label><input type="radio" name="preferencia" id="exterior" value="exterior"> Exterior</label> <br>
+            <label><input type="radio"name="preferencia" id="interior" value="interior"> Interior</label> <br>
+          </fieldset>
+
+          <fieldset>
+            <legend>¿Cómo es la personalidad de tu gato?</legend>
+            
+            <!-- checked es un atributo de las checkbox y los radiobutton que
+            hace que la casilla que tenga dicho atributo este seleccionada
+            por defecto -->
+            <input type="checkbox" name="personalidad" id="loving" checked>
+            <label for="loving">Loving</label>
+
+            <input type="checkbox" name="personalidad" id="lazy">
+            <label for="laze">Lazy</label>
+
+            <input type="checkbox" name="personalidad" id="energetic">
+            <label for="energetic">Energetic</label>
+          </fieldset>
+
+          <br>
+          <input type="text" name="url-foto-gato" placeholder="URL de foto de tu gato" required>
+          <!-- button tiene el atributo "type" para indicar el tipo de
+          botton que será -->
+          <!-- type="submit" botón para enviar -->
+          <!-- type="reset" botoón para reiniciar formuluario a sus valores default -->
+          <!-- type="menu" -->
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>No Copyright - <a href="#">chisteschistosos.com</a></p>
+    </footer>
+
+    <!-- main engloba el contenido principal de nuestra página -->
+    <!-- section separa las diferentes secciones -->
+    <!-- footer es el pie de pagina -->
+  </body>
+</html>
